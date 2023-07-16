@@ -1,0 +1,41 @@
+Rancangan Arsitektur atau Blueprint Sistem Website E-library pada SMA Negeri 1 Kuta Selatan:
+
+a. Antarmuka Pengguna
+berikut 
+
+Halaman beranda dengan opsi koleksi buku terbaik, daftar peminjam terbanyak, dan daftar koleksi buku terbaru.
+
+Halaman hasil pencarian dengan daftar koleksi buku yang relevan.
+
+Halaman detail buku dengan informasi lengkap, sinopsis, dan berapa kali dilihat.
+
+Halaman profil pengguna untuk mengelola informasi pribadi, penilaian, dan preferensi.
+
+Halaman list peminjaman untuk mengelola peminjaman.
+
+Halaman list pengembalian untuk mengelola pengembalian.
+
+Halaman absensi dengan informasi lengkap pengunjung.
+
+b. Basis Data
+
+Tabel "koleksi" adalah tabel yang menyimpan data koleksi buku dengan atribut seperti judul, pengarang, jenis, deskripsi, status buku, nomor dewey, jumlah eksemplar, cover, link buku, file dokumen, edisi, publisher, tahun publish, bahasa, lihat, tanggal pengadaan, nama pengadaan, dan user_id.
+
+Tabel "user" adalah tabel yang menyimpan data user dengan atribut seperti nama, alamat email, kata sandi, alamat rumah, telepon, foto, dan status user.
+
+Tabel "pengumuman" adalah tabel yang menyimpan data pengumuman dengan atribut seperti judul, foto, deskripsi, tanggal, dokumen, dan user_id.
+
+Tabel "absensi" adalah tabel yang menyimpan data absensi dengan atribut seperti tanggal, nama, telepon, dan tujuan.
+
+Tabel "roles" adalah tabel yang menyimpan data peran dengan atribut seperti nama, display nama, dan deskripsi.
+
+Tabel "role_user" adalah tabel yang menyimpan data peran bagi user dengan atribut seperti user_id, role_id, dan user_type.
+
+Tabel "peminjaman" adalah tabel yang menyimpan data peminjaman dengan atribut seperti user_id, koleksi_id, tanggal_pinjam, tanggal_kembali, denda, dan status peminjaman.
+
+
+
+
+
+
+
